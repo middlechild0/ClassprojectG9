@@ -1,8 +1,20 @@
+package calculator;
 import java.util.Scanner;
 class Addition {
     public int add(int num1, int num2) {
         return num1 + num2;
     }
+}
+
+class subtraction {
+	int i;
+	int j;
+	int sub;
+	public int subtraction(int i,int j)
+	{
+		sub = i-j;
+		return sub;
+	}
 }
 
 public class Main {
@@ -29,19 +41,21 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    Addition = new Addition();
+                    Addition se = new Addition();
                     System.out.print("Enter the first number: ");
                     int num1 = scanner.nextInt();
                     System.out.print("Enter the second number: ");
                     int num2 = scanner.nextInt();
-                    System.out.println("Result: " + addition.add(num1, num2));
+                    System.out.println("Result: " + se.add(num1, num2));
                     break;
                 case 2:
+                	subtraction sb =new subtraction();
                     System.out.print("Enter the first number: ");
                     num1 = scanner.nextInt();
                     System.out.print("Enter the second number: ");
                     num2 = scanner.nextInt();
-                    System.out.println("Result: " + Subtraction.subtract(num1, num2));
+                    System.out.println("Result is :;"+ sb);
+                    System.out.println("Result: " + sb.subtraction(num1, num2));
                     break;
                 case 3:
                     System.out.print("Enter the first number: ");
