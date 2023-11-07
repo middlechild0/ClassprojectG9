@@ -1,11 +1,10 @@
-class addition(){
-    System.out.print("Enter the first number: ");
-                    int num1 = scanner.nextInt();
-                    System.out.print("Enter the second number: ");
-                    int num2 = scanner.nextInt();
-                    System.out.println("Result: " + Addition.add(num1, num2));
-                    break;
+import java.util.Scanner;
+class Addition {
+    public int add(int num1, int num2) {
+        return num1 + num2;
+    }
 }
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -30,8 +29,13 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    addition = new addition;
-                    addition();
+                    Addition = new Addition();
+                    System.out.print("Enter the first number: ");
+                    int num1 = scanner.nextInt();
+                    System.out.print("Enter the second number: ");
+                    int num2 = scanner.nextInt();
+                    System.out.println("Result: " + addition.add(num1, num2));
+                    break;
                 case 2:
                     System.out.print("Enter the first number: ");
                     num1 = scanner.nextInt();
