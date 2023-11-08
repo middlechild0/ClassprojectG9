@@ -75,18 +75,21 @@ public class Main {
                     System.out.println("Result: " + sb.subtraction(num1, num2));
                     break;
                 case 3:
+                multiplication ml=new multiplication();
                     System.out.print("Enter the first number: ");
                     num1 = scanner.nextInt();
                     System.out.print("Enter the second number: ");
                     num2 = scanner.nextInt();
-                    System.out.println("Result: " + Multiplication.multiply(num1, num2));
+                    System.out.println("Result: " + ml.multiply(num1, num2));
                     break;
                 case 4:
+                division dc = new division();
+                    
                     System.out.print("Enter the first number: ");
                     num1 = scanner.nextInt();
                     System.out.print("Enter the second number: ");
                     num2 = scanner.nextInt();
-                    System.out.println("Result: " + Division.divide(num1, num2));
+                    System.out.println("Result: " + dc.divide(num1, num2));
                     break;
                 case 5:
                     System.out.print("Enter the length: ");
