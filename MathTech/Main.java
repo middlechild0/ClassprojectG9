@@ -14,8 +14,9 @@ public class Main {
             System.out.println("4. Division");
             System.out.println("5. Calculate Circle Perimeter");
             System.out.println("6. Calculate Circle Area");
-            System.out.println("7. Calculate Triangle Area");
-            System.out.println("8. Exit");
+            System.out.println("7. Calculate Rectangle Perimeter");
+            System.out.println("8. Calculate Rectangle Area");
+            System.out.println("9. Exit");
 
             int choice = scanner.nextInt();
 
@@ -37,13 +38,16 @@ public class Main {
                     DivisionGUI.run();
                     break;
                 case 5:
-                    // Add code to calculate the circle perimeter here
+                    CirclePerimeterGUI.run();
                     break;
                 case 6:
-                    // Add code to calculate the circle area here
+                    CircleAreaGUI.run();
                     break;
                 case 7:
-                    // Add code to calculate the triangle area here
+                    RectanglePerimeterGUI.run();
+                    break;
+                case 8:
+                    RectangleAreaGUI.run();
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
