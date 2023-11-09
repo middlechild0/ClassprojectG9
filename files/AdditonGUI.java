@@ -25,7 +25,7 @@ public class AdditionGUI {
         
         // Create and set up the output field
         JTextField resultField = new JTextField(10);
-        resultField.setEditable(false); // Make it read-only
+        resultField.setEditable false);
         
         // Add action listener to the "Add" button
         addButton.addActionListener(new ActionListener() {
