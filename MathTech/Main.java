@@ -1,4 +1,4 @@
-package MathTech; 
+package MathTech;
 
 import java.util.Scanner;
 
@@ -12,9 +12,16 @@ public class Main {
             System.out.println("2. Subtraction");
             System.out.println("3. Multiplication");
             System.out.println("4. Division");
-            System.out.println("5. Exit");
+            System.out.println("5. Calculate Circle Perimeter");
+            System.out.println("6. Calculate Circle Area");
+            System.out.println("7. Calculate Triangle Area");
+            System.out.println("8. Exit");
 
             int choice = scanner.nextInt();
+
+            if (choice == 8) {
+                break;
+            }
 
             switch (choice) {
                 case 1:
@@ -30,12 +37,19 @@ public class Main {
                     DivisionGUI.run();
                     break;
                 case 5:
-                    System.out.println("Goodbye!");
-                    scanner.close();
-                    System.exit(0);
+                    // Add code to calculate the circle perimeter here
+                    break;
+                case 6:
+                    // Add code to calculate the circle area here
+                    break;
+                case 7:
+                    // Add code to calculate the triangle area here
+                    break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
         }
+
+        scanner.close();
     }
 }
