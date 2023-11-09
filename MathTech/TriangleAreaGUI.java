@@ -1,9 +1,11 @@
+package MathTech;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class 4 {
-    public static void main(String[] args) {
+public class TriangleAreaGUI {
+    public static void run() {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 createAndShowGUI();
@@ -12,22 +14,17 @@ public class 4 {
     }
 
     private static void createAndShowGUI() {
-        
         JFrame frame = new JFrame("Triangle Area Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        
         JTextField baseField = new JTextField(10);
         JTextField heightField = new JTextField(10);
 
-        
         JButton calculateButton = new JButton("Calculate Area");
 
-        
         JTextField areaField = new JTextField(10);
-        areaField.setEditable(false); // Make it read-only
+        areaField.setEditable(false);
 
-        
         calculateButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -41,7 +38,6 @@ public class 4 {
             }
         });
 
-        
         JPanel panel = new JPanel();
         panel.add(new JLabel("Base: "));
         panel.add(baseField);
@@ -51,10 +47,7 @@ public class 4 {
         panel.add(new JLabel("Area: "));
         panel.add(areaField);
 
-       
         frame.add(panel);
-
-        
         frame.pack();
         frame.setVisible(true);
     }
